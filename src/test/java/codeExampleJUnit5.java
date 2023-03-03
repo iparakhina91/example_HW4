@@ -27,6 +27,6 @@ public class codeExampleJUnit5 {
     $("#wiki-pages-filter").setValue("SoftAssertions").pressEnter();
         // Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
     $("[href='/selenide/selenide/wiki/SoftAssertions']").click();
-    $("#repo-content-pjax-container").shouldHave(text("Using JUnit5 extend test class"));
+    $("#repo-content-pjax-container").shouldHave(text("@ExtendWith({SoftAssertsExtension.class})"));
     }
 }
