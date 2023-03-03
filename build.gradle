@@ -11,10 +11,11 @@ compileTestJava {
 }
 
 dependencies {
+    implementation 'junit:junit:4.13.1'
     testImplementation(
             "com.codeborne:selenide:6.11.2",
-            "org.junit.jupiter:junit-jupiter:5.9.2"
-    )
+            "org.junit.jupiter:junit-jupiter:5.9.2",
+            "org.slf4j:slf4j-simple:1.7.36")
 }
 
 test {
