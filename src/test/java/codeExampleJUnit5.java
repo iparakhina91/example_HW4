@@ -28,6 +28,5 @@ public class codeExampleJUnit5 {
         // Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
     $("[href='/selenide/selenide/wiki/SoftAssertions']").click();
     $("#repo-content-pjax-container").shouldHave(text("Using JUnit5 extend test class"));
-    sleep(10000);
     }
 }
